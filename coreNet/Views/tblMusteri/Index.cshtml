@@ -1,0 +1,83 @@
+﻿@model IEnumerable<coreNet.tblMusteri>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriSoyad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriMail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriTel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriMesaj)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriIlce)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriAtikTuru)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.musteriMiktar)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriSoyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriMail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriTel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriMesaj)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriIlce)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriAtikTuru)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.musteriMiktar)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.MusteriID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.MusteriID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.MusteriID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

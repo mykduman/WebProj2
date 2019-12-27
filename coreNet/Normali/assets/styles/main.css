@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html{
+
+    scroll-behavior: smooth;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Oswald', sans-serif !important;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+.btn-primary{
+    background-color: #f39c12 !important;
+    border-color: #e67e22 !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.btn-primary:hover{
+    background-color: #FFF!important;
+    color: #f39c12!important;
+    border-color: #e67e22!important;
+}
+.btn-primary:active{
+    background-color: #FFF !important;
+    color: #f39c12 !important;
+    border-color: #e67e22 !important;
+}
+
+
+/* MENU */
+
+.menu{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 140px;
+    z-index: 2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.menuLink{
+    color: #F9F9F9;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+.menuLink:hover{
+    text-decoration: none;
+    color: #F9F9F9;
+    background-color: black;
+    width: 15px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F9F9F9;
+    line-height: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.stickyLink{
+    color: black !important;
+}
+.stickyLink:hover{
+    color: #F9F9F9 !important;
+}
+
+/* HOME PAGE */
+
+.home{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.darkBg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    filter:opacity(30%);
+}
+.homeTitle{
+    width: auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.homeTitle h1{
+    font-size: 2.5rem;
+    color:#FFF;
+    margin-bottom: 40px;
+}
+.homeTitle p{
+    color:#FFF;
+}
+.homeTitle a{
+    background-color: #f39c12;
+    border-color: #e67e22;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.homeTitle a:hover{
+    color: #f39c12;
+    background-color: #FFF;
+    border-color: #e67e22;
+}
+
+/* ABOUT US */
+
+.aboutUs{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding:20px
+}
+
+.aboutUs h1{
+    text-align: center;
+    padding: 80px;
+}
+.aboutUs .card{
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+    margin-bottom: 15px ;
+}
+.aboutUs .centerCardContent{
+    text-align: center;
+    padding: 14px;
+}
+.aboutUs .card-title{
+    font-weight: 600;
+    color: #f39c12;
+}
+.aboutUs .mx-auto{
+    margin: 20px;
+}
+
+/* RECYCLE EARN */
+
+.recycleEarn{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: transparent;
+}
+
+.recycleEarn h1{
+    padding: 80px;
+    text-align: center;
+    color: #FFF;
+}
+.recycleEarn .row{
+    justify-content: center;
+    background-color: transparent!important;
+}
+.recycleEarn .card{
+    margin-bottom: 15px;
+}
+.recycleEarn .centerCardContent{
+    text-align: center;
+}
+.recycleEarn .card-title{
+    font-weight: 600;
+    color: #f39c12;
+    padding: 20px;
+}
+
+/* LOCATIONS */
+
+.locations{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding:20px
+}
+.locations h1{
+    text-align: center;
+    padding: 80px;
+}
+.locations .card{
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+    margin-bottom: 15px ;
+}
+.locations .centerCardContent{
+    text-align: center;
+    padding: 14px;
+}
+.locations .card-title{
+    font-weight: 600;
+    color: #f39c12;
+}
+.locations .mx-auto{
+    margin: 20px;
+}
+
+/* REPORT WASTE */
+.reportWaste{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url("../images/3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: transparent;  
+}
+.reportWaste h1{
+    color: #FFF;
+    text-align: center;
+    padding: 80px;
+}
+.reportWaste .row{
+    justify-content: center;
+}
+.reportWaste label{
+    color: #FFF;
+}
+.reportWaste .col-md-12 .btn{
+    width: 30vw;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* CONTACT US */
+.contactUs{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding:20px
+}
+.contactUs h1{
+    text-align: center;
+    padding: 80px;
+}
+.contactUs .row{
+    justify-content: center;
+}
+.contactUs .card{
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+    margin-bottom: 15px ;
+}
+.contactUs .centerCardContent{
+    text-align: center;
+    padding: 14px;
+}
+.contactUs .card-title{
+    font-weight: 600;
+    color: #f39c12;
+}
+.contactUs .mx-auto{
+    margin: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+    /* ABOUT US RESPONSIVE */
+
+    .aboutUs .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100vw;
+    }
+    .aboutUs .col-md-8{
+         flex: 0 0 100%;
+         max-width: 100vw;
+     }
+
+    /* RECYCLE EARN RESPONSIVE */
+
+    .recycleEarn{
+        height: auto;
+        background-color: transparent;
+    }
+
+    /* LOCATIONS RESPONSIVE */
+    .locations{
+        height: auto;
+    }
+    .locations .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100vw;
+    }
+
+
+}

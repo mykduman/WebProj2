@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="webDatabaseModelStoreContainer" CdmEntityContainer="webDatabaseEntities">
+    <EntitySetMapping Name="tblMusteri">
+      <EntityTypeMapping TypeName="webDatabaseModel.tblMusteri">
+        <MappingFragment StoreEntitySet="tblMusteri">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="musteriAd" ColumnName="musteriAd" />
+          <ScalarProperty Name="musteriSoyad" ColumnName="musteriSoyad" />
+          <ScalarProperty Name="musteriMail" ColumnName="musteriMail" />
+          <ScalarProperty Name="musteriTel" ColumnName="musteriTel" />
+          <ScalarProperty Name="musteriMesaj" ColumnName="musteriMesaj" />
+          <ScalarProperty Name="musteriIlce" ColumnName="musteriIlce" />
+          <ScalarProperty Name="musteriAtikTuru" ColumnName="musteriAtikTuru" />
+          <ScalarProperty Name="musteriMiktar" ColumnName="musteriMiktar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
